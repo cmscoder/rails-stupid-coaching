@@ -1,0 +1,30 @@
+
+<html>
+  <head>
+    <title>The Spoon</title>
+  </head>
+
+  <body>
+    <h1>Stupid Coaching</h1>
+    <div>
+      <h2><%= @question %></h2> <!-- Add this -->
+      <h3> -- you </h3>
+    </div>
+    <%= yield %>
+    <div>
+      <h2><%= @answer %></h2> <!-- Add this -->
+      <p><%= link_to "Ask a new question", ask_path %></p> <!-- Add this -->
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
