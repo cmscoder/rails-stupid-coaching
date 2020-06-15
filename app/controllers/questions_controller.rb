@@ -5,7 +5,6 @@ class QuestionsController < ApplicationController
 
   def answer
     @question = params[:question]
-
     if @question.downcase == 'i am going to work'
       @answer = 'Great!'
     elsif @question.end_with?('?')
